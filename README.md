@@ -68,6 +68,8 @@ React-Native-Demo/
 │   ├── adaptive-icon.png  # Android adaptive icon
 │   ├── favicon.png        # Web favicon
 │   ├── icon.png          # App icon
+│   ├── img/
+│   │   └── test_image.png # Custom test image
 │   └── splash-icon.png   # Splash screen icon
 ├── app.json              # Expo configuration
 ├── package.json          # Dependencies and scripts
@@ -79,10 +81,12 @@ React-Native-Demo/
 **Main Component (`app/index.jsx`):**
 - **Container**: Centered flex layout with `alignItems: 'center'` and `justifyContent: 'center'`
 - **Text Elements**: Two styled text components with different appearances
+- **Image Element**: Custom test image with fixed dimensions
 - **Styling**: 
   - `container`: Full flex layout for centering
   - `testContainer`: Bold font weight with 20px font size
   - `marignContiner`: Consistent 14px top and bottom margins
+  - `imageContainer`: Fixed 100x100 pixel dimensions
 
 ## ⚙️ Configuration
 
@@ -108,16 +112,19 @@ Key dependencies included:
 
 - **Styled Home Screen**: Centered layout with custom styling
 - **Multiple Text Elements**: "Home" and "Hello How r u" with different styles
+- **Image Display**: Custom test image with responsive sizing
 - **Custom Styling**: 
   - Centered container with flex layout
   - Bold text styling for secondary content
   - Consistent margin spacing between elements
+  - Image styling with fixed dimensions (100x100)
 - **Expo Router Setup**: Ready for additional screens
 - **Responsive Design**: Proper flex layout for different screen sizes
 
 ## 🚧 Development Roadmap
 
 - [x] Add basic styling and layout
+- [x] Add image display functionality
 - [ ] Implement navigation between screens
 - [ ] Add more interactive UI components
 - [ ] Create additional screens
@@ -125,6 +132,7 @@ Key dependencies included:
 - [ ] Implement testing framework
 - [ ] Add error handling and loading states
 - [ ] Enhance styling with themes and animations
+- [ ] Add image optimization and lazy loading
 
 ## 📱 Platform-Specific Notes
 
