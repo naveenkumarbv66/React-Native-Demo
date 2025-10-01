@@ -3,12 +3,29 @@ import React from 'react'
 
 const index = () => {
     return (
-        <View>
-            <Text>Home</Text>
+        <View style={styles.container}>
+            <Text style={styles.marignContiner}>Home</Text>
+            <Text style={[styles.testContainer, styles.marignContiner]}>Hello How r u</Text>
         </View>
     )
 }
 
 export default index
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1
+    },
+
+    testContainer: {
+        fontWeight: 'bold',
+        fontSize: 20
+    },
+
+    marignContiner: {
+        marginTop: 14,
+        marginBottom: 14
+    }
+})
