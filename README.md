@@ -63,7 +63,7 @@ Before running this project, make sure you have:
 ```
 React-Native-Demo/
 ├── app/
-│   └── index.jsx          # Main home screen component
+│   └── index.jsx          # Main home screen component with styling
 ├── assets/
 │   ├── adaptive-icon.png  # Android adaptive icon
 │   ├── favicon.png        # Web favicon
@@ -73,6 +73,16 @@ React-Native-Demo/
 ├── package.json          # Dependencies and scripts
 └── README.md            # This file
 ```
+
+### Code Structure Details
+
+**Main Component (`app/index.jsx`):**
+- **Container**: Centered flex layout with `alignItems: 'center'` and `justifyContent: 'center'`
+- **Text Elements**: Two styled text components with different appearances
+- **Styling**: 
+  - `container`: Full flex layout for centering
+  - `testContainer`: Bold font weight with 20px font size
+  - `marignContiner`: Consistent 14px top and bottom margins
 
 ## ⚙️ Configuration
 
@@ -96,19 +106,25 @@ Key dependencies included:
 
 ## 🎨 Current Features
 
-- Simple home screen with "Home" text
-- Basic React Native component structure
-- Expo Router setup (ready for additional screens)
+- **Styled Home Screen**: Centered layout with custom styling
+- **Multiple Text Elements**: "Home" and "Hello How r u" with different styles
+- **Custom Styling**: 
+  - Centered container with flex layout
+  - Bold text styling for secondary content
+  - Consistent margin spacing between elements
+- **Expo Router Setup**: Ready for additional screens
+- **Responsive Design**: Proper flex layout for different screen sizes
 
 ## 🚧 Development Roadmap
 
-- [ ] Add proper styling and UI components
+- [x] Add basic styling and layout
 - [ ] Implement navigation between screens
-- [ ] Add state management (if needed)
+- [ ] Add more interactive UI components
 - [ ] Create additional screens
 - [ ] Add TypeScript support
 - [ ] Implement testing framework
 - [ ] Add error handling and loading states
+- [ ] Enhance styling with themes and animations
 
 ## 📱 Platform-Specific Notes
 
