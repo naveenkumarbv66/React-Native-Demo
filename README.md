@@ -80,13 +80,21 @@ React-Native-Demo/
 
 **Main Component (`app/index.jsx`):**
 - **Container**: Centered flex layout with `alignItems: 'center'` and `justifyContent: 'center'`
-- **Text Elements**: Two styled text components with different appearances
-- **Image Element**: Custom test image with fixed dimensions
+- **Text Elements**: Multiple styled text components with different appearances
+- **Image Elements**: Various image components with different sources and configurations
+- **ImageBackground**: Background image with overlay content and welcome message
+- **Image Sources**:
+  - Local images using `require()` and `import`
+  - Remote images with URI sources
+  - Images with custom headers and POST methods
+  - Cached remote images
 - **Styling**: 
   - `container`: Full flex layout for centering
   - `testContainer`: Bold font weight with 20px font size
   - `marignContiner`: Consistent 14px top and bottom margins
   - `imageContainer`: Fixed 100x100 pixel dimensions
+  - Inline styles for remote images
+  - Purple text color for enhanced visibility
 
 ## ⚙️ Configuration
 
@@ -112,12 +120,18 @@ Key dependencies included:
 
 - **Styled Home Screen**: Centered layout with custom styling
 - **Multiple Text Elements**: "Home" and "Hello How r u" with different styles
-- **Image Display**: Custom test image with responsive sizing
+- **Image Display**: Multiple image components with various sources
+- **ImageBackground Component**: Background image with overlay content
+- **Multiple Image Sources**: 
+  - Local images (require and import)
+  - Remote images with caching options
+  - Images with custom headers and methods
 - **Custom Styling**: 
   - Centered container with flex layout
   - Bold text styling for secondary content
   - Consistent margin spacing between elements
   - Image styling with fixed dimensions (100x100)
+  - Purple text color for enhanced visibility
 - **Expo Router Setup**: Ready for additional screens
 - **Responsive Design**: Proper flex layout for different screen sizes
 
@@ -125,6 +139,9 @@ Key dependencies included:
 
 - [x] Add basic styling and layout
 - [x] Add image display functionality
+- [x] Add ImageBackground component
+- [x] Implement multiple image sources (local and remote)
+- [ ] Add missing styles for overlay and text components
 - [ ] Implement navigation between screens
 - [ ] Add more interactive UI components
 - [ ] Create additional screens

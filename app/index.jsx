@@ -3,7 +3,8 @@ import testImage from '../assets/img/test_image.png'
 import React from 'react'
 
 const index = () => {
-    const backgroundImage = require('../assets/img/test_image.png'); // Local image
+    //const backgroundImage = require('../assets/img/test_image.png'); // Local image
+    const backgroundImage = { uri: 'https://www.freeiconspng.com/thumbs/android-icon/green-android-icon-31.png' }; // Remote image
     return (
         <View style={styles.container}>
             <Text style={styles.marignContiner}>Home</Text>
@@ -16,7 +17,7 @@ const index = () => {
 
             <Image
                 source={{
-                    uri: 'https://reactjs.org/logo-og.png',
+                    uri: 'https://www.freeiconspng.com/thumbs/android-icon/green-android-icon-31.png',
                     method: 'POST',
                     headers: {
                         Pragma: 'no-cache',
