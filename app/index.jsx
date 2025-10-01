@@ -8,7 +8,22 @@ const index = () => {
             <Text style={styles.marignContiner}>Home</Text>
             <Text style={[styles.testContainer, styles.marignContiner, { color: 'purple' }]}>Hello How r u</Text>
             <Image source={testImage} style={styles.imageContainer}></Image>
-            <Image source={require('../assets/img/test_image.png')} style={styles.imageContainer} />
+            <Image source={require('../assets/img/test_image.png')}
+                style={styles.imageContainer} />
+            <Image source={{ uri: 'https://reactjs.org/logo-og.png' }}
+                style={{ width: 100, height: 100 }} />
+
+            <Image
+                source={{
+                    uri: 'https://reactjs.org/logo-og.png',
+                    method: 'POST',
+                    headers: {
+                        Pragma: 'no-cache',
+                    },
+                    body: 'Your Body goes here',
+                }}
+                style={{ width: 100, height: 100 }}
+            />
         </View>
     )
 }
