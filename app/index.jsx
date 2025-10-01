@@ -6,8 +6,9 @@ const index = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.marignContiner}>Home</Text>
-            <Text style={[styles.testContainer, styles.marignContiner]}>Hello How r u</Text>
+            <Text style={[styles.testContainer, styles.marignContiner, { color: 'purple' }]}>Hello How r u</Text>
             <Image source={testImage} style={styles.imageContainer}></Image>
+            <Image source={require('../assets/img/test_image.png')} style={styles.imageContainer} />
         </View>
     )
 }
