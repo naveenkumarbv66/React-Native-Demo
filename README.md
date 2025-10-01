@@ -63,7 +63,8 @@ Before running this project, make sure you have:
 ```
 React-Native-Demo/
 ├── app/
-│   └── index.jsx          # Main home screen component with styling
+│   ├── index.jsx          # Home screen with navigation
+│   └── imagesDemo.jsx     # Images demo screen
 ├── assets/
 │   ├── adaptive-icon.png  # Android adaptive icon
 │   ├── favicon.png        # Web favicon
@@ -78,9 +79,18 @@ React-Native-Demo/
 
 ### Code Structure Details
 
-**Main Component (`app/index.jsx`):**
+**Home Screen (`app/index.jsx`):**
+- **Navigation**: Link component to navigate to Images Demo screen
 - **Container**: Centered flex layout with `alignItems: 'center'` and `justifyContent: 'center'`
-- **Text Elements**: Multiple styled text components with different appearances
+- **Text Elements**: "Home" and "Hello How r u" with different styles
+- **Styling**: 
+  - `container`: Full flex layout for centering
+  - `testContainer`: Bold font weight with 20px font size
+  - `marignContiner`: Consistent 14px top and bottom margins
+  - Purple text color for enhanced visibility
+
+**Images Demo Screen (`app/imagesDemo.jsx`):**
+- **Navigation**: Link component to navigate back to Home screen
 - **Image Elements**: Various image components with different sources and configurations
 - **ImageBackground**: Background image with overlay content and welcome message
 - **Image Sources**:
@@ -90,11 +100,8 @@ React-Native-Demo/
   - Cached remote images
 - **Styling**: 
   - `container`: Full flex layout for centering
-  - `testContainer`: Bold font weight with 20px font size
-  - `marignContiner`: Consistent 14px top and bottom margins
   - `imageContainer`: Fixed 100x100 pixel dimensions
   - Inline styles for remote images
-  - Purple text color for enhanced visibility
 
 ## ⚙️ Configuration
 
@@ -118,7 +125,10 @@ Key dependencies included:
 
 ## 🎨 Current Features
 
-- **Styled Home Screen**: Centered layout with custom styling
+- **File-Based Navigation**: Multi-screen app with Expo Router
+- **Navigation Links**: Interactive navigation between screens
+- **Home Screen**: Dashboard with navigation to other screens
+- **Images Demo Screen**: Dedicated screen showcasing image functionality
 - **Multiple Text Elements**: "Home" and "Hello How r u" with different styles
 - **Image Display**: Multiple image components with various sources
 - **ImageBackground Component**: Background image with overlay content
@@ -132,7 +142,6 @@ Key dependencies included:
   - Consistent margin spacing between elements
   - Image styling with fixed dimensions (100x100)
   - Purple text color for enhanced visibility
-- **Expo Router Setup**: Ready for additional screens
 - **Responsive Design**: Proper flex layout for different screen sizes
 
 ## 🚧 Development Roadmap
@@ -141,8 +150,9 @@ Key dependencies included:
 - [x] Add image display functionality
 - [x] Add ImageBackground component
 - [x] Implement multiple image sources (local and remote)
+- [x] Implement file-based navigation with Expo Router
+- [x] Create multiple screens with navigation links
 - [ ] Add missing styles for overlay and text components
-- [ ] Implement navigation between screens
 - [ ] Add more interactive UI components
 - [ ] Create additional screens
 - [ ] Add TypeScript support
